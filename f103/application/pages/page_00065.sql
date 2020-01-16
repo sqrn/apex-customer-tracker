@@ -1,0 +1,50 @@
+prompt --application/pages/page_00065
+begin
+wwv_flow_api.create_page(
+ p_id=>65
+,p_user_interface_id=>wwv_flow_api.id(14567760419240676869)
+,p_name=>'Preferences'
+,p_step_title=>'Preferences'
+,p_reload_on_submit=>'A'
+,p_warn_on_unsaved_changes=>'N'
+,p_autocomplete_on_off=>'ON'
+,p_group_id=>wwv_flow_api.id(14743893931462417387)
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_help_text=>'No help is available for this page.'
+,p_last_upd_yyyymmddhh24miss=>'20190322142428'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(14896864626269167978)
+,p_plug_name=>'Preferences'
+,p_region_template_options=>'#DEFAULT#:t-Region--noPadding:t-Region--hideHeader'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(14882979167825818413)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_display_point=>'BODY'
+,p_list_id=>wwv_flow_api.id(14897419416500668539)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_api.id(14882992268104818439)
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(14897416069880611219)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_plug_template=>wwv_flow_api.id(14882981701312818415)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_api.id(17863858070717352974)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_api.id(14882997201411818460)
+);
+wwv_flow_api.create_page_computation(
+ p_id=>wwv_flow_api.id(15496278381713761197)
+,p_computation_sequence=>10
+,p_computation_item=>'LAST_VIEW'
+,p_computation_point=>'BEFORE_HEADER'
+,p_computation_type=>'STATIC_ASSIGNMENT'
+,p_computation=>'&APP_PAGE_ID.'
+);
+end;
+/

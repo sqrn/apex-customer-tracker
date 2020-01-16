@@ -1,0 +1,34 @@
+prompt --application/shared_components/user_interface/lovs/flex_label_alignment
+begin
+wwv_flow_api.create_list_of_values(
+ p_id=>wwv_flow_api.id(14876885531491661166)
+,p_lov_name=>'FLEX_LABEL_ALIGNMENT'
+,p_lov_query=>'.'||wwv_flow_api.id(14876885531491661166)||'.'
+,p_location=>'STATIC'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14876885811594661166)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'Right'
+,p_lov_return_value=>'RIGHT'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14876886115018661172)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'Right-Top'
+,p_lov_return_value=>'RIGHT-TOP'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14876886411834661172)
+,p_lov_disp_sequence=>3
+,p_lov_disp_value=>'Right-Center'
+,p_lov_return_value=>'RIGHT-CENTER'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14876886721905661172)
+,p_lov_disp_sequence=>4
+,p_lov_disp_value=>'Right-Bottom'
+,p_lov_return_value=>'RIGHT-BOTTOM'
+);
+end;
+/

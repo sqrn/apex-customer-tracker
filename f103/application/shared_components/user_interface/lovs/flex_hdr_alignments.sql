@@ -1,0 +1,28 @@
+prompt --application/shared_components/user_interface/lovs/flex_hdr_alignments
+begin
+wwv_flow_api.create_list_of_values(
+ p_id=>wwv_flow_api.id(14882048917021782460)
+,p_lov_name=>'FLEX_HDR_ALIGNMENTS'
+,p_lov_query=>'.'||wwv_flow_api.id(14882048917021782460)||'.'
+,p_location=>'STATIC'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14882049202549782472)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'Left'
+,p_lov_return_value=>'LEFT'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14882049513358782477)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'Center'
+,p_lov_return_value=>'CENTER'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(14882049818959782477)
+,p_lov_disp_sequence=>3
+,p_lov_disp_value=>'Right'
+,p_lov_return_value=>'RIGHT'
+);
+end;
+/

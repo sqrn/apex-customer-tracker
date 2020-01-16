@@ -1,0 +1,151 @@
+prompt --application/shared_components/logic/application_items
+begin
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17859502170142278337)
+,p_name=>'ACTIVE_MSG'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(18169485893719929455)
+,p_name=>'ACTIVITIES'
+,p_protection_level=>'I'
+,p_required_patch=>wwv_flow_api.id(18162672743755673338)
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14761049930040856968)
+,p_name=>'APPLICATION_TITLE'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17859527872285458669)
+,p_name=>'CATEGORY_HELP'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978964701622640960)
+,p_name=>'CNT_01'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978964932234641938)
+,p_name=>'CNT_02'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978965130293642775)
+,p_name=>'CNT_03'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978986126440404321)
+,p_name=>'CNT_04'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978986325362404844)
+,p_name=>'CNT_05'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978986524068405409)
+,p_name=>'CNT_06'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978986722774406013)
+,p_name=>'CNT_07'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978986921695406532)
+,p_name=>'CNT_08'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14979004929341813233)
+,p_name=>'CNT_09'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17025664817286376122)
+,p_name=>'CNT_10'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14883357403638300024)
+,p_name=>'CONTACTS'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17859528684406462245)
+,p_name=>'CONTACT_TYPES_HELP'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17856644763883427746)
+,p_name=>'CREATE_MSG'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14883421007056677662)
+,p_name=>'CUSTOMER'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14883355407623235362)
+,p_name=>'CUSTOMERS'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17859528277480460216)
+,p_name=>'CUSTOMER_STATUS_HELP'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17025674480760338836)
+,p_name=>'CUSTOMER_TYPE_HELP'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17150377497898888198)
+,p_name=>'CUSTOMER_USE_CASE_HELP'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(15054972737716257079)
+,p_name=>'GET_ID'
+,p_protection_level=>'N'
+,p_item_comment=>'This is a generic item used to fetch things via ajax. Used for fetching image for customer Logos.'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17859502675683279962)
+,p_name=>'INACTIVE_MSG'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17844525288289002741)
+,p_name=>'LAST_VIEW'
+,p_protection_level=>'N'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14883357143451294589)
+,p_name=>'PRODUCTS'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17819966722814789532)
+,p_name=>'RETURN_URL'
+,p_protection_level=>'S'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(14978987120617406990)
+,p_name=>'TZ'
+,p_protection_level=>'I'
+);
+wwv_flow_api.create_flow_item(
+ p_id=>wwv_flow_api.id(17858770887304489168)
+,p_name=>'UNLINK_CONFIRM_MSG'
+,p_protection_level=>'S'
+);
+end;
+/

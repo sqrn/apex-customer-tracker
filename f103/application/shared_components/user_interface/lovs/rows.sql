@@ -1,0 +1,52 @@
+prompt --application/shared_components/user_interface/lovs/rows
+begin
+wwv_flow_api.create_list_of_values(
+ p_id=>wwv_flow_api.id(16332963816925185617)
+,p_lov_name=>'ROWS'
+,p_lov_query=>'.'||wwv_flow_api.id(16332963816925185617)||'.'
+,p_location=>'STATIC'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332964128652185620)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'5'
+,p_lov_return_value=>'5'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332964324847185623)
+,p_lov_disp_sequence=>20
+,p_lov_disp_value=>'10'
+,p_lov_return_value=>'10'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332964509836185623)
+,p_lov_disp_sequence=>30
+,p_lov_disp_value=>'15'
+,p_lov_return_value=>'15'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332964707599185623)
+,p_lov_disp_sequence=>40
+,p_lov_disp_value=>'20'
+,p_lov_return_value=>'20'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332964923911185623)
+,p_lov_disp_sequence=>50
+,p_lov_disp_value=>'50'
+,p_lov_return_value=>'50'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332965122547185623)
+,p_lov_disp_sequence=>60
+,p_lov_disp_value=>'100'
+,p_lov_return_value=>'100'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(16332965314671185623)
+,p_lov_disp_sequence=>70
+,p_lov_disp_value=>'500'
+,p_lov_return_value=>'500'
+);
+end;
+/

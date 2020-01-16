@@ -1,0 +1,22 @@
+prompt --application/shared_components/user_interface/lovs/data_load_tab_status
+begin
+wwv_flow_api.create_list_of_values(
+ p_id=>wwv_flow_api.id(17827194025108233658)
+,p_lov_name=>'DATA_LOAD_TAB_STATUS'
+,p_lov_query=>'.'||wwv_flow_api.id(17827194025108233658)||'.'
+,p_location=>'STATIC'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(17827194234290233665)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'Enable'
+,p_lov_return_value=>'ENABLE'
+);
+wwv_flow_api.create_static_lov_data(
+ p_id=>wwv_flow_api.id(17827194420540233671)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'Disable'
+,p_lov_return_value=>'DISABLE'
+);
+end;
+/
